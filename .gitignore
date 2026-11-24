@@ -15,3 +15,4 @@ src/vtl_library_strong.pkl
 *.wav
 *.mp3
 *.mp4
+!docs/audio/*.mp3
