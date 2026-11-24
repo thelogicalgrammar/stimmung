@@ -83,7 +83,6 @@ before the transformed version, so you can compare them.
 
 The pattern itself. Listen for the whistle-like overtone line falling above the steady note.
 
-<!-- drop 01_pattern.mp4 here -->
 https://github.com/user-attachments/assets/769e1dd8-25c4-403a-84aa-5f75407d9df6
 
 #### 2 · retro
@@ -92,7 +91,6 @@ https://github.com/user-attachments/assets/769e1dd8-25c4-403a-84aa-5f75407d9df6
 
 Retrograde: the cycle runs backwards, so the overtone line now climbs and each group ends on its accent.
 
-<!-- drop 02_retro.mp4 here -->
 https://github.com/user-attachments/assets/9f2f7f2c-0737-4976-98e0-89a980d39cda
 
 #### 3 · augment
@@ -101,7 +99,6 @@ https://github.com/user-attachments/assets/9f2f7f2c-0737-4976-98e0-89a980d39cda
 
 Augmentation: half speed, so one pattern now spans two cycles.
 
-<!-- drop 03_augment.mp4 here -->
 https://github.com/user-attachments/assets/183d13bc-8ae4-42dc-835b-069ad7ab1e93
 
 #### 4 · invert
@@ -110,7 +107,6 @@ https://github.com/user-attachments/assets/183d13bc-8ae4-42dc-835b-069ad7ab1e93
 
 Inversion: the overtone contour flips (falling becomes rising); rhythm and syllables stay.
 
-<!-- drop 04_invert.mp4 here -->
 https://github.com/user-attachments/assets/8212f250-0471-4cbd-b798-91f1a085ee7f
 
 #### 5 · melisma
@@ -119,7 +115,6 @@ https://github.com/user-attachments/assets/8212f250-0471-4cbd-b798-91f1a085ee7f
 
 Melisma: accents long enough to carry it (here, the one starting the final three-pulse group) become a quick three-note overtone turn.
 
-<!-- drop 05_melisma.mp4 here -->
 https://github.com/user-attachments/assets/3dccbfe3-83f1-40c3-929b-be9261265dcb
 
 #### 6 · whisper
@@ -128,7 +123,6 @@ https://github.com/user-attachments/assets/3dccbfe3-83f1-40c3-929b-be9261265dcb
 
 Whisper: the vocal folds stop vibrating, leaving only breath noise shaped by the tract.
 
-<!-- drop 06_whisper.mp4 here -->
 https://github.com/user-attachments/assets/eda6a505-6659-42f8-9431-35f28ae918a9
 
 #### 7 · converge
@@ -137,7 +131,6 @@ https://github.com/user-attachments/assets/eda6a505-6659-42f8-9431-35f28ae918a9
 
 Identification as a process: starts hummed, reversed and clipped, then drops one transformation per cycle (staccato, then retro, then hum) until it matches the leader.
 
-<!-- drop 07_converge.mp4 here -->
 https://github.com/user-attachments/assets/f754ee51-3808-4625-9a3c-7484c2a95889
 
 #### 8 · diverge
@@ -146,7 +139,6 @@ https://github.com/user-attachments/assets/f754ee51-3808-4625-9a3c-7484c2a95889
 
 The reverse: starts identical, then each cycle adds one transformation: off-beat weak notes, then shifted vowels, then accents leaping to the top of the range.
 
-<!-- drop 08_diverge.mp4 here -->
 https://github.com/user-attachments/assets/5460372e-2356-447d-a504-a83ee3292a43
 
 #### 9 · blend
@@ -155,7 +147,6 @@ https://github.com/user-attachments/assets/5460372e-2356-447d-a504-a83ee3292a43
 
 A hummed version dissolves note by note into the sung one.
 
-<!-- drop 09_blend.mp4 here -->
 https://github.com/user-attachments/assets/c490b48b-16ff-45df-81eb-38b59b0c4969
 
 #### 10 · name
@@ -164,7 +155,6 @@ https://github.com/user-attachments/assets/c490b48b-16ff-45df-81eb-38b59b0c4969
 
 Calls a "magic name", then alternates the pattern with the name's syllables laid on its rhythm and overtones.
 
-<!-- drop 10_name.mp4 here -->
 https://github.com/user-attachments/assets/64700d60-25d7-4805-9fb4-103a24cd17d7
 
 #### 11 · own
@@ -173,7 +163,6 @@ https://github.com/user-attachments/assets/64700d60-25d7-4805-9fb4-103a24cd17d7
 
 A counter-proposal: the singer's own motif on the leader's pulse grid, under a crescendo–decrescendo.
 
-<!-- drop 11_own.mp4 here -->
 https://github.com/user-attachments/assets/b6b8cb5e-a03a-403b-a187-e42e0dbaade9
 
 #### 12 · sustain
@@ -182,7 +171,6 @@ https://github.com/user-attachments/assets/b6b8cb5e-a03a-403b-a187-e42e0dbaade9
 
 Holds the pattern's first overtone as one long tone per cycle, then a hummed drone.
 
-<!-- drop 12_sustain.mp4 here -->
 https://github.com/user-attachments/assets/ac458452-db1d-436f-a82b-621d43ba69b8
 
 In the piece these are combined and sampled: a follower might wait until two others have
