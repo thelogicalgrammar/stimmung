@@ -1,0 +1,17 @@
+# renders and caches (large; regenerate with the scripts)
+out/
+cache/
+
+# build artefacts
+__pycache__/
+*.pyc
+src/vt_core.so
+
+# intermediate shape libraries (vtl_library.pkl is the one in use)
+src/vtl_library_v1.pkl
+src/vtl_library_strong.pkl
+
+# audio/video anywhere
+*.wav
+*.mp3
+*.mp4
