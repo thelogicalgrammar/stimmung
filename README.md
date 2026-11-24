@@ -3,6 +3,8 @@
 A generative piece for six synthetic voices in the manner of Stockhausen's *Stimmung*,
 sung by articulatory vocal-tract models ([VocalTractLab](https://www.vocaltractlab.de/), Birkholz).
 
+▶ **Listen / watch:** [latest render on YouTube](https://www.youtube.com/watch?v=z-PeF35nsY0)
+
 Every pitch is a harmonic of B-flat 1 (58.27 Hz). Each singer holds one fundamental
 (harmonics 2, 3, 4, 5, 7, 9) and moves only its overtones, by retuning the shape of its
 vocal tract so that a formant sits exactly on a chosen harmonic.
