@@ -69,3 +69,7 @@ The video renderer is memory-hungry; set `SCRATCH` to a disk with room for its t
 The shape library `src/vtl_library.pkl` is included, so you don't need to rebuild it.
 To rebuild it anyway (slow), run `python vtl_library.py` and then
 `python overtone_strong.py --out vtl_library.pkl`.
+
+## License
+
+GPL-3.0 (see `LICENSE`), the same as VocalTractLab, whose speaker files are included.
