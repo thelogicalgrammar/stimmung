@@ -19,6 +19,7 @@ from singers import SINGERS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SINGER = 0               # bass: centre of the stereo image, widest overtone range
+T0 = 0.4                 # lead-in before the first cycle
 DUR = 14.0               # seconds per example (rounded to whole cycles)
 
 
@@ -65,7 +66,7 @@ def events_for(prog, cell, period, pulse, nc, seed):
     progs = [None] * len(SINGERS)
     progs[SINGER] = prog
     out = dsl.interpret(progs, ctx)
-    return dsl.to_events(out, ctx, 0.4, dyn=0.6)
+    return dsl.to_events(out, ctx, T0, dyn=0.6), ctx
 
 
 def main():
@@ -87,8 +88,8 @@ def main():
     for i, (name, text, prog) in enumerate(EXAMPLES):
         if a.only and name not in a.only:
             continue
-        events = events_for(prog, cell, period, pulse, nc, a.seed + i)
-        total = 0.4 + nc * period + 1.0
+        events, _ = events_for(prog, cell, period, pulse, nc, a.seed + i)
+        total = T0 + nc * period + 1.0
         print(f"\n{i + 1:02d} {name}: {prog}\n   {len(events[SINGER])} notes, {total:.1f}s")
         if a.dry:
             continue

@@ -65,10 +65,10 @@ harmonic k = 1…48 of that B♭ and nothing else:
 ## The strategy language, by ear
 
 In the piece, each singer's behaviour in a model is a program sampled from a grammar.
-The snippets below show what individual programs do. Each one is **a single voice (the
+The videos below show what individual programs do. Each one is **a single voice (the
 bass) alone**, running one hand-written program for six cycles (about 15 s) of the same
 leader pattern. The programs are printed exactly as the interpreter prints them, which
-is also how they appear in the video captions.
+is also how they appear in the video captions. Each video shows the bass's vocal tract on the left and, on the right, the same overtone spiral as in the main video, with a ring around the overtone being sung.
 
 The leader pattern is 2+2+2+3 pulses with a 2.32 s cycle, sung *NI NI NI-ne NI-nu-ka*.
 Its accents step down through the bass's overtones 15 → 14 → 12 → 11 (that is,
@@ -76,20 +76,125 @@ harmonics 30, 28, 24, 22 of the low B♭) while the fundamental stays fixed. In 
 `play(leader) until cycle≥34%; …` examples the original pattern plays for three cycles
 before the transformed version, so you can compare them.
 
-| # | Program | What to listen for | |
-|---|---|---|---|
-| 1 | `play(leader) until end` | The pattern itself. Listen for the whistle-like overtone line falling above the steady note. | [▶ listen](docs/audio/01_pattern.mp3?raw=true) |
-| 2 | `play(leader) until cycle≥34%; play(retro(leader)) until end` | Retrograde: the cycle runs backwards, so the overtone line now climbs and each group ends on its accent. | [▶ listen](docs/audio/02_retro.mp3?raw=true) |
-| 3 | `play(leader) until cycle≥34%; play(augment(leader)) until end` | Augmentation: half speed, so one pattern now spans two cycles. | [▶ listen](docs/audio/03_augment.mp3?raw=true) |
-| 4 | `play(leader) until cycle≥34%; play(invert(leader)) until end` | Inversion: the overtone contour flips (falling becomes rising); rhythm and syllables stay. | [▶ listen](docs/audio/04_invert.mp3?raw=true) |
-| 5 | `play(leader) until cycle≥34%; play(melisma(leader)) until end` | Melisma: accents long enough to carry it (here, the one starting the final three-pulse group) become a quick three-note overtone turn. | [▶ listen](docs/audio/05_melisma.mp3?raw=true) |
-| 6 | `play(leader) until cycle≥34%; play(whisper(leader)) until end` | Whisper: the vocal folds stop vibrating, leaving only breath noise shaped by the tract. | [▶ listen](docs/audio/06_whisper.mp3?raw=true) |
-| 7 | `converge[hum ∘ retro ∘ staccato] every 1, then hold until end` | Identification as a process: starts hummed, reversed and clipped, then drops one transformation per cycle (staccato, then retro, then hum) until it matches the leader. | [▶ listen](docs/audio/07_converge.mp3?raw=true) |
-| 8 | `diverge[syncopate ∘ vowels(2) ∘ leap] every 1` | The reverse: starts identical, then each cycle adds one transformation: off-beat weak notes, then shifted vowels, then accents leaping to the top of the range. | [▶ listen](docs/audio/08_diverge.mp3?raw=true) |
-| 9 | `blend(hum(leader) → leader, 5 cycles) until end` | A hummed version dissolves note by note into the sung one. | [▶ listen](docs/audio/09_blend.mp3?raw=true) |
-| 10 | `call YEMAYA; alternate(leader \| name(YEMAYA)) until end` | Calls a "magic name", then alternates the pattern with the name's syllables laid on its rhythm and overtones. | [▶ listen](docs/audio/10_name.mp3?raw=true) |
-| 11 | `swell{ play(own#42) until end }` | A counter-proposal: the singer's own motif on the leader's pulse grid, under a crescendo–decrescendo. | [▶ listen](docs/audio/11_own.mp3?raw=true) |
-| 12 | `sustain(leader) until cycle≥60%; play(drone(hum)) until end` | Holds the pattern's first overtone as one long tone per cycle, then a hummed drone. | [▶ listen](docs/audio/12_sustain.mp3?raw=true) |
+#### 1 · pattern
+
+`play(leader) until end`
+
+The pattern itself. Listen for the whistle-like overtone line falling above the steady note.
+
+<!-- drop 01_pattern.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/01_pattern.mp3?raw=true)</sub>
+
+#### 2 · retro
+
+`play(leader) until cycle≥34%; play(retro(leader)) until end`
+
+Retrograde: the cycle runs backwards, so the overtone line now climbs and each group ends on its accent.
+
+<!-- drop 02_retro.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/02_retro.mp3?raw=true)</sub>
+
+#### 3 · augment
+
+`play(leader) until cycle≥34%; play(augment(leader)) until end`
+
+Augmentation: half speed, so one pattern now spans two cycles.
+
+<!-- drop 03_augment.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/03_augment.mp3?raw=true)</sub>
+
+#### 4 · invert
+
+`play(leader) until cycle≥34%; play(invert(leader)) until end`
+
+Inversion: the overtone contour flips (falling becomes rising); rhythm and syllables stay.
+
+<!-- drop 04_invert.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/04_invert.mp3?raw=true)</sub>
+
+#### 5 · melisma
+
+`play(leader) until cycle≥34%; play(melisma(leader)) until end`
+
+Melisma: accents long enough to carry it (here, the one starting the final three-pulse group) become a quick three-note overtone turn.
+
+<!-- drop 05_melisma.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/05_melisma.mp3?raw=true)</sub>
+
+#### 6 · whisper
+
+`play(leader) until cycle≥34%; play(whisper(leader)) until end`
+
+Whisper: the vocal folds stop vibrating, leaving only breath noise shaped by the tract.
+
+<!-- drop 06_whisper.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/06_whisper.mp3?raw=true)</sub>
+
+#### 7 · converge
+
+`converge[hum ∘ retro ∘ staccato] every 1, then hold until end`
+
+Identification as a process: starts hummed, reversed and clipped, then drops one transformation per cycle (staccato, then retro, then hum) until it matches the leader.
+
+<!-- drop 07_converge.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/07_converge.mp3?raw=true)</sub>
+
+#### 8 · diverge
+
+`diverge[syncopate ∘ vowels(2) ∘ leap] every 1`
+
+The reverse: starts identical, then each cycle adds one transformation: off-beat weak notes, then shifted vowels, then accents leaping to the top of the range.
+
+<!-- drop 08_diverge.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/08_diverge.mp3?raw=true)</sub>
+
+#### 9 · blend
+
+`blend(hum(leader) → leader, 5 cycles) until end`
+
+A hummed version dissolves note by note into the sung one.
+
+<!-- drop 09_blend.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/09_blend.mp3?raw=true)</sub>
+
+#### 10 · name
+
+`call YEMAYA; alternate(leader | name(YEMAYA)) until end`
+
+Calls a "magic name", then alternates the pattern with the name's syllables laid on its rhythm and overtones.
+
+<!-- drop 10_name.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/10_name.mp3?raw=true)</sub>
+
+#### 11 · own
+
+`swell{ play(own#42) until end }`
+
+A counter-proposal: the singer's own motif on the leader's pulse grid, under a crescendo–decrescendo.
+
+<!-- drop 11_own.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/11_own.mp3?raw=true)</sub>
+
+#### 12 · sustain
+
+`sustain(leader) until cycle≥60%; play(drone(hum)) until end`
+
+Holds the pattern's first overtone as one long tone per cycle, then a hummed drone.
+
+<!-- drop 12_sustain.mp4 here -->
+
+<sub>[audio only (mp3)](docs/audio/12_sustain.mp3?raw=true)</sub>
 
 In the piece these are combined and sampled: a follower might wait until two others have
 joined, then canon the leader one pulse late, and the leader can `cue` a transformation
